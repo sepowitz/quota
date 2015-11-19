@@ -1,0 +1,6 @@
+
+<%=form_for @quote, url: { action: 'create' } do | f | %>
+	<%= f.text_area :content %>
+	<%= f.text_field :author %>
+	<%= f.submit "inspire" %>
+<% end %>
