@@ -1,6 +1,8 @@
 <% @quotes.each do | quote | %>
 <blockquote class="quote-container">
-	<p class="content"><span>&ldquo;</span><%= quote.content %><span>&rdquo;</span></p>
+	<span class='open-quote'>&ldquo;</span>
+	<p class="content"><%= quote.content %></p>
+	<span class='close-quote'>&rdquo;</span>
 	<small class="author">– <%= quote.author %> –</small>
 </blockquote>
 <% end %>

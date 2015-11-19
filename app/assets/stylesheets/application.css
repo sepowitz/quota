@@ -53,4 +53,35 @@ header nav li {
  }
 
 
+ #user-modal {
+ 	width: 80%;
+ 	margin: 0 10%;
+ 	height: 800px;
+ 	background: white;
+ 	position: absolute;
+ 	z-index:100;
+ 	text-align: center;
+ 	padding-top: 10%;
+ }
+
+ #user-modal .theme {
+ 	width: 80%;
+ 	height: 50px;
+ 	border: solid 1px black;
+ 	margin: 0 auto;
+ 	text: center;
+ 	margin-top: 20px;
+ 	padding: 50px;
+ }
+
+  #user-modal.hide {
+ 		top: -100%;
+ }
+
+  #user-modal.show {
+ 		top: -100%;
+ 		top: 5%;
+ }
+
+
 
