@@ -25,7 +25,7 @@
 	}
 } 
 
-.quote-container {
+.quote-container.default {
 		.open-quote, .close-quote {
 		font-size: 4em;
 	}
@@ -55,6 +55,26 @@
 		color: orange;
 	}
 }
+
+
+.quote-container.sea {
+	background: url('https://media.giphy.com/media/NSFeL72bZ3KVy/giphy.gif');
+	background-size: cover;
+	color: lightblue;
+}
+
+.quote-container.space {
+	background: url('https://media.giphy.com/media/TZf4ZyXb0lXXi/giphy.gif');
+	background-size: cover;
+	color: white;
+}
+
+.quote-container.farm {
+	background: url('https://media.giphy.com/media/XncE2zmvthjyg/giphy.gif');
+	background-size: cover;
+	color: white;
+}
+
 
 /**********************
 
@@ -98,4 +118,6 @@ input[type=submit] {
 	text-transform: uppercase;
 	letter-spacing: .2em;
 }
+
+
 
