@@ -9,6 +9,7 @@
 **********************/
 
 .quote-container {
+	height: 100%;
 	background: black;
 	padding: 20%;
 	color: white;
@@ -49,10 +50,9 @@
 .quote-container{
 	.author {
 		font-size: .5em;
-		font-family: 'Quicksand';
+		font-family: sans-serif;
 		font-weight: bolder;
 		text-transform: uppercase;
-		color: orange;
 	}
 }
 
@@ -72,7 +72,7 @@
 .quote-container.farm {
 	background: url('https://media.giphy.com/media/XncE2zmvthjyg/giphy.gif');
 	background-size: cover;
-	color: white;
+	color: SpringGreen;
 }
 
 
@@ -117,7 +117,15 @@ input[type=submit] {
 	border-radius: 5px;
 	text-transform: uppercase;
 	letter-spacing: .2em;
+	transition: 1s;
 }
+
+input[type=submit]:hover {
+	background: darkgrey;
+	color: white;
+	cursor: pointer;
+}
+
 
 
 

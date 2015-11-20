@@ -29,21 +29,23 @@ basic reset
 /*************
 header style
 *************/
-
+a {
+	text-decoration: none;
+	color: inherit;
+}
 
 header {
 	width: 100%;
-	/*background: lightgray;*/
 	padding: 10px 20px;
 }
 
 header h1, p {
 	width: 20%;
+	font-family: 'Quicksand';
 }
 
-
 header nav {
-	margin-top: -2%;
+	margin-top: -3%;
 	float: right;
 }
 
@@ -53,7 +55,24 @@ header nav li {
 	border: solid 1px black;
 	border-radius: 10px;
 	padding: 2px 10px;
+	cursor: pointer;
+	transition: 1s;
+	font-family: 'Quicksand';
  }
+
+
+ header nav li:hover {
+	background: black;
+	color: white;
+ }
+
+  header nav li a:hover {
+	color: white;
+ }
+
+/*************
+modal style
+*************/
 
 
  #user-modal {
@@ -65,28 +84,61 @@ header nav li {
  	z-index:100;
  	text-align: center;
  	padding-top: 10%;
+ 	font-family: 'Quicksand';
+
  }
 
  #user-modal .theme {
  	width: 80%;
  	height: 50px;
- 	border: solid 1px black;
  	margin: 0 auto;
  	text: center;
  	margin-top: 20px;
  	padding: 20px;
+ 	font-family: 'Quicksand';
+ 	text-transform: uppercase;
+ 	letter-spacing: .2em;
  }
 
-  #user-modal.hide {
- 		top: -100%;
- 		transition: 2s;
+ #user-modal.hide {
+ 	top: -100%;
+ 	transition: 1s;
  }
 
-  #user-modal.show {
- 		top: 30%;
- 		transition: 2s;
+ #user-modal.show {
+ 	top: 30%;
+ 	transition: 1s;
  }
 
-under the sea
-lost in space
-down on the farm
+ #user-modal .theme.sea-trigger {
+ 	background: darkblue;
+ 	color: aquamarine;
+ 	cursor: pointer;
+ 	transition: 1s;
+ }
+
+  #user-modal .theme.sea-trigger:hover {
+ 	opacity: .6;
+ }
+
+ #user-modal .theme.space-trigger {
+ 	background: black;
+ 	color: white;
+ 	cursor: pointer;
+ 	transition: 1s;
+ }
+
+ #user-modal .theme.space-trigger:hover {
+ 	opacity: .6;
+ }
+
+  #user-modal .theme.farm-trigger {
+ 	background: sienna;
+ 	color: springgreen;
+ 	cursor: pointer;
+ 	transition: 1s;
+ }
+
+ #user-modal .theme.farm-trigger:hover {
+ 	opacity: .6;
+ }
