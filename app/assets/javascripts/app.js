@@ -28,6 +28,10 @@ jQuery(document).ready(function($){
 		}
 	};
 
+	var defaultTheme = function(){
+		
+	};
+
 	//Add theme
 	seaTrigger.on('click', function(){
 		if(localStorage.theme){
@@ -68,5 +72,7 @@ jQuery(document).ready(function($){
 			console.log('nothing in local storage')
 		}
 	}
+
+
 
 });
