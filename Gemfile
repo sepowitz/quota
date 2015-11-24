@@ -24,7 +24,8 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 # simple webfonts gem to add some stylish typography
 gem 'google-webfonts-rails', '~> 0.0.4'
-
+# puma server
+gem 'puma'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
